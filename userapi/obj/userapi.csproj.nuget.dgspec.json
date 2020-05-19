@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/tugay/Desktop/userapi/userapi.csproj": {}
+    "/home/tugay/Desktop/userapiwithnetcore/userapi/userapi.csproj": {}
   },
   "projects": {
-    "/home/tugay/Desktop/userapi/userapi.csproj": {
+    "/home/tugay/Desktop/userapiwithnetcore/userapi/userapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tugay/Desktop/userapi/userapi.csproj",
+        "projectUniqueName": "/home/tugay/Desktop/userapiwithnetcore/userapi/userapi.csproj",
         "projectName": "userapi",
-        "projectPath": "/home/tugay/Desktop/userapi/userapi.csproj",
+        "projectPath": "/home/tugay/Desktop/userapiwithnetcore/userapi/userapi.csproj",
         "packagesPath": "/home/tugay/.nuget/packages/",
-        "outputPath": "/home/tugay/Desktop/userapi/obj/",
+        "outputPath": "/home/tugay/Desktop/userapiwithnetcore/userapi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/tugay/.nuget/NuGet/NuGet.Config"

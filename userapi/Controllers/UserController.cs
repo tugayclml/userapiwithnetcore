@@ -47,6 +47,28 @@ namespace userapi.Controllers
             return user;
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutTodoItem(long id, User updatedUser)
+        {
+            var user = await _context.User.FindAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            user.Name = updatedUser.Name;
+            user.Surname = updatedUser.Surname;
+            user.Picture = updatedUser.Picture;
+            TimeSpan timeSpan = DateTime.Now - DateTime.ParseExact(updatedUser.birthday, "mm/dd/yyyy", null);;
+            int years = (int) (timeSpan.TotalDays) / 365;
+            user.birthday = years.ToString();
+
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
         [HttpDelete("{id}")]
         public async Task<ActionResult<User>> DeleteUser(long id)
         {
